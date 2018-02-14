@@ -60,10 +60,24 @@ add appropriate SecurityGroups TCP connections input and output
 
 ```SHELL
 docker-machine ssh <master>
- - Init swarm on master node
+```
+
+- Init swarm on master node
+
+```SHELL
 docker swarm init && exit
- - Joining worker to master
+```
+
+- Joining worker to master
+
+```SHELL
 docker swarm join \
     --token <SWMTKN-1-5so41imzseot1fsldk97k5nh9zhdmj11dio8s2b7r96a2966oq-87uhvtps1jgje87bfbhrlv712> \
     <public_worker_ip : 192.168.99.100>:2377
+```
+
+- Swarm nodes listing
+
+```SHELL
+ docker node ls
 ```
