@@ -36,7 +36,7 @@ synker.machine.aws
 
 wget "https://drive.google.com/uc?export=download&id=1Y3K3G-n5IUVcM7vMMbAm8_OHFkJu80sT" -o aws.pem
 
-ssh-keygen -y -f aws.pem > aws.pem.pub 
+ssh-keygen -y -f aws.pem > aws.pem.pub
 
 ```
 
@@ -47,10 +47,23 @@ sudo -u dockeradmin -s
 ```
 
 Check docker deamon port
+
 ```SHELL
 sudo netstat -tunlp | grep docker
 ```
 
-### For AWS 
+### For AWS
 
-add appropriate SecurityGroups TCP connections input and output	
+add appropriate SecurityGroups TCP connections input and output
+
+## Docker Swarm
+
+```SHELL
+docker-machine ssh <master>
+ - Init swarm on master node
+docker swarm init && exit
+ - Joining worker to master
+docker swarm join \
+    --token <SWMTKN-1-5so41imzseot1fsldk97k5nh9zhdmj11dio8s2b7r96a2966oq-87uhvtps1jgje87bfbhrlv712> \
+    <public_worker_ip : 192.168.99.100>:2377
+```
