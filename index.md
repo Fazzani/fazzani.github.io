@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[docker generic driver](genericDockerMachine.md).
+[docker generic driver](docs/docker/genericDockerMachine.md).
 
 There should be whitespace between paragraphs.
 
