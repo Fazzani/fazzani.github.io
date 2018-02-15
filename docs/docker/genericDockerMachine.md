@@ -5,13 +5,33 @@ Remote : Add new User (dockeradmin)
 
 ```SHELL
 useradd -m -d /home/dockeradmin -s /bin/bash dockeradmin
+passwd dockeradmin
 ```
+
+Local : Allow Sudo Access for dockeradmin
+
+```SHELL
+ echo "dockeradmin     ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+```
+
+Local : Generate SSH Public-Private Key Pair on Local Host
+
+```SHELL
+ssh-keygen
+
+ssh-copy-id dockeradmin@remote-server
+```
+
+Note: During ssh-keygen, don’t give any passphrase. Leave it empty.
+
 Remote : puting cert to authorized_keys of the new user (dockeradmin)
+
 ```SHELL
 cat aws.pem.pub > /home/dockeradmin/.ssh/authorized_keys
 ```
 
 Local : TEST SSH connection
+
 ```SHELL
 ssh -i aws.pem dockeradmin@18.194.42.216
 ```
@@ -19,7 +39,7 @@ ssh -i aws.pem dockeradmin@18.194.42.216
 Local : Create docker-machine
 
 ```SHELL
- 
+
 docker-machine create -d generic \
 --generic-ssh-user dockeradmin \
 --generic-ssh-key aws.pem \
