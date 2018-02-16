@@ -25,7 +25,7 @@ Local : Generate SSH Public-Private Key Pair on Local Host
 ```SHELL
 ssh-keygen
 
-ssh-copy-id dockeradmin@remote-server
+ssh-copy-id -i <cert_file_name.pub> dockeradmin@remote-server
 ```
 
 Note: During ssh-keygen, don’t give any passphrase. Leave it empty.
