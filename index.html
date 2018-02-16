@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<ul>
+    {% assign mypages = site.posts | sort: "order" %}
+      {% for page in mypages %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>

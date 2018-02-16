@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run",
+            "type": "process",
+            "command": "%DOCKER_TOOLBOX_INSTALL_PATH%\\docker-compose.exe",
+            "args": [
+                "--login",
+                "-i",
+                "%DOCKER_TOOLBOX_INSTALL_PATH%\\start.sh"
+            ],
+        },
+        {
+            "label": "Launch Docker",
+            "type": "process",
+            "command": "bash",
+            "args": [
+                "--login",
+                "-i",
+                "D:\\Program Files\\Docker Toolbox\\start.sh"
+            ],
+        },
+        {
+            "label": "down",
+            "type": "shell",
+            "command": "docker-compose down"
+        },
+        {
+            "label": "reload",
+            "type": "shell",
+            "command": "docker-compose down && docker-compose up -d"
+        }
+    ]
+}

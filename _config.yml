@@ -1,4 +1,13 @@
+# Site settings
 title: Synker
+email: fazzani.heni@outlook.fr
 description: Fazzani Heni GitHub Pages.
+baseurl: ""
 google_analytics:
 theme: jekyll-theme-midnight
+timezone: Europe/Paris
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+exclude: ["CNAME", "Rakefile", "MIT-LICENSE", "LICENSE", "README.md", "docker-compose.yml"]

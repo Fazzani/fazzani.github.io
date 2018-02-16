@@ -1,4 +1,8 @@
-# The Midnight theme
+# Docker compose
+
+[docker compose config](https://kristofclaes.github.io/2016/06/19/running-jekyll-locally-with-docker/)
+
+## The Midnight theme
 
 [![Build Status](https://travis-ci.org/pages-themes/midnight.svg?branch=master)](https://travis-ci.org/pages-themes/midnight) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-midnight.svg)](https://badge.fury.io/rb/jekyll-theme-midnight)
 
@@ -7,6 +11,7 @@
 ![Thumbnail of Midnight](thumbnail.png)
 
 ## Usage
+
 
 To use the Midnight theme:
 
