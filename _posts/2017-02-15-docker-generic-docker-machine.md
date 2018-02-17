@@ -46,10 +46,13 @@ Local : Create docker-machine
 
 ```SHELL
 
-docker-machine create -d generic \
+docker-machine --debug create -d generic \
 --generic-ssh-user dockeradmin \
 --generic-ssh-key aws.pem \
 --generic-ssh-port 22 \
+--engine-label label=debian-x86_64-8g \
+--engine-label arch=x86_64 \
+--engine-label mem=8 \
 --engine-storage-driver devicemapper \
 --generic-ip-address 18.194.42.216 \
 synker.machine.aws
@@ -76,6 +79,18 @@ Check docker deamon port
 
 ```SHELL
 sudo netstat -tunlp | grep docker
+```
+
+**To copy all from Local Location to Remote Location (Upload)**
+
+```shell
+scp -r /path/from/destination username@hostname:/path/to/destination
+```
+
+**To copy all from Remote Location to Local Location (Download)**
+
+```shell
+scp -r username@hostname:/path/from/destination /path/to/destination
 ```
 
 ### For AWS
