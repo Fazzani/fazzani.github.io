@@ -61,14 +61,6 @@ synker.machine.aws
 
 ### Various
 
-```SHELL
-
-wget "https://drive.google.com/uc?export=download&id=1Y3K3G-n5IUVcM7vMMbAm8_OHFkJu80sT" -o aws.pem
-
-ssh-keygen -y -f aws.pem > aws.pem.pub
-
-```
-
 Switch User
 
 ```SHELL
