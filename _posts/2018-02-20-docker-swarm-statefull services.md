@@ -9,6 +9,13 @@ date:   2015-11-17 16:16:01 -0600
 
 [Persistence Alternatives](https://opensource.ncsa.illinois.edu/confluence/display/NDS/Gluster+Alternatives+and+Cloud+Provider+Alternatives)
 
+## Storage drivers types
+
+- Flocker : [flocker example install]
+- GlusterFs
+- NFS
+- Rex-ray
+
 ## Tips
 
 - Trigger the failure on the active Swarm Node
@@ -16,3 +23,5 @@ date:   2015-11-17 16:16:01 -0600
 ```sh
 docker node update --availability drain <machine>
 ```
+
+[flocker  example install]: https://devops.profitbricks.com/tools/flocker/
