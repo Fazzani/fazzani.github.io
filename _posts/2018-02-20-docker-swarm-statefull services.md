@@ -90,7 +90,6 @@ sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
 
 ```sh
 docker run -i -t --volume-driver=nfs -v 18.194.42.216/mnt/test_volume:/data ubuntu /bin/bash
-docker run -it --volume-driver=nfs -v 18.194.42.216/:/mount ubuntu /bin/bash
 ```
 
 > add to autoload
