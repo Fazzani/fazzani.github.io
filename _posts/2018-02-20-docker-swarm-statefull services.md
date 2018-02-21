@@ -129,6 +129,17 @@ docker run -it --rm -v --volume-driver=nfs 18.194.42.216/tmp:/mount/tmp --name s
 ```
 
 ---
+After discovering that this is massively undocumented,here's the correct way to mount a NFS volume using stack and docker compose.
+
+The most important thing is that you need to be using version: "3.2" or higher. You will have strange and un-obvious errors if you don't.
+
+The second issue is that volumes are not automatically updated when their definition changes. This can lead you down a rabbit hole of thinking that your changes aren't correct, when they just haven't been applied. Make sure you docker rm VOLUMENAME everywhere it could possibly be, as if the volume exists, it won't be validated.
+
+The third issue is more of a NFS issue - The NFS folder will not be created on the server if it doesn't exist. This is just the way NFS works. You need to make sure it exists before you do anything.
+
+(Don't remove 'soft' and 'nolock' unless you're sure you know what you're doing - this stops docker from freezing if your NFS server goes away)
+
+---
 
 [flocker  example install]: https://devops.profitbricks.com/tools/flocker/
 [Flocker]:https://flocker-docs.clusterhq.com/en/latest/docker-integration/
