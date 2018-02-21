@@ -124,6 +124,8 @@ cd /tmp
 wget -O docker-volume-netshare https://github.com/ContainX/docker-volume-netshare/releases/download/v0.34/docker-volume-netshare_0.34_linux_amd64-bin
 chmod a+x ./docker-volume-netshare
 sudo ./docker-volume-netshare cifs --verbose=true
+docker run -it --rm -v --volume-driver=nfs 18.194.42.216/tmp:/mount/tmp --name share_vol alpine ash
+
 ```
 
 ---
