@@ -50,6 +50,8 @@ docker-machine --debug create -d generic \
 --generic-ssh-user dockeradmin \
 --generic-ssh-key aws.pem \
 --generic-ssh-port 22 \
+--label size=small \
+--label provider=ovh \
 --engine-label label=debian-x86_64-8g \
 --engine-label arch=x86_64 \
 --engine-label mem=8 \
@@ -59,7 +61,7 @@ synker.machine.aws
 
 ```
 
-### Various
+## Various
 
 Switch User
 
@@ -73,13 +75,13 @@ Check docker deamon port
 sudo netstat -tunlp | grep docker
 ```
 
-**To copy all from Local Location to Remote Location (Upload)**
+** To copy all from Local Location to Remote Location (Upload) **
 
 ```shell
 scp -r /path/from/destination username@hostname:/path/to/destination
 ```
 
-**To copy all from Remote Location to Local Location (Download)**
+** To copy all from Remote Location to Local Location (Download) **
 
 ```shell
 scp -r username@hostname:/path/from/destination /path/to/destination
