@@ -77,6 +77,7 @@ volumes:
 ### NetShare
 
 > Install netshare plugin on all hosts as per http://netshare.containx.io/docs/getting-started
+[another source for install](https://attx-project.github.io/Shared-NFS-Swarm-Cloud.html)
 
 ```sh
 wget https://github.com/ContainX/docker-volume-netshare/releases/download/v0.35/docker-volume-netshare_0.35_amd64.deb
