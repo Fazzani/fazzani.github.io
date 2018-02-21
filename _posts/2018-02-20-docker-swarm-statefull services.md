@@ -28,7 +28,7 @@ For quite a long time I have a pet project of a swarm cluster and the weak spot 
 
 ## Using Cloudstor
 
- create shared Cloudstor volumes using the docker volume create CLI:
+ >create shared Cloudstor volumes using the docker volume create CLI:
 
 ```sh
 docker volume create -d "cloudstor:aws" --opt backing=shared mysharedvol1
@@ -36,10 +36,30 @@ docker volume create -d "cloudstor:aws" --opt backing=shared mysharedvol1
 
 ## Tips
 
-- Trigger the failure on the active Swarm Node
+> Trigger the failure on the active Swarm Node
 
 ```sh
 docker node update --availability drain <machine>
+```
+
+### Rex-ray docker swarm
+
+1. Install Rexray on each node and master
+
+```sh
+docker plugin install rexray/csi-nfs
+```
+
+>Let’s install REX-Ray on the 3 Docker Swarm nodes you have:
+
+```sh
+for each in $(docker-machine ls -q); do; docker-machine ssh $each "curl -sSL https://dl.bintray.com/emccode/rexray/install | sh -" ; done
+```
+
+2. Create volume
+
+```sh
+docker volume create -d rexray/csi-nfs -o host=151.80.235.155 -o export=/webgrab_volume webgrab
 ```
 
 - docker compose volume config
@@ -53,6 +73,60 @@ volumes:
       o: "addr=$SOMEIP,nolock,soft,rw"
       device: ":$PathOnServer"
 ```
+
+### NetShare
+
+> Install netshare plugin on all hosts as per http://netshare.containx.io/docs/getting-started
+
+```sh
+wget https://github.com/ContainX/docker-volume-netshare/releases/download/v0.35/docker-volume-netshare_0.35_amd64.deb
+sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
+```
+
+> EDIT: One more thing, after installing the plugin you need to start it (sudo systemctl start docker-volume-netshare) then enable to start with the system (sudo systemctl enable docker-volume-netshare).
+
+> Test netshare
+
+```sh
+docker run -i -t --volume-driver=nfs -v 18.194.42.216/mnt/test_volume:/data ubuntu /bin/bash
+docker run -it --volume-driver=nfs -v 18.194.42.216/:/mount ubuntu /bin/bash
+```
+
+> add to autoload
+
+```sh
+sudo tee /etc/systemd/system/dockerefs.service <<-'EOF'
+[Unit]
+Description = Load docker plugin for efs
+After = docker.service
+
+[Service]
+StartLimitInterval=5
+StartLimitBurst=10
+User=root
+ExecStart = /usr/bin/docker-volume-netshare nfs
+Restart=always
+RestartSec=120
+[Install]
+WantedBy = multi-user.target
+EOF
+```
+
+> Start the service
+
+sudo systemctl start docker-volume-netshare.service
+
+> Test verbose mount
+
+```sh
+sudo pkill -f docker-volume-netshare # kill any extant processes
+cd /tmp
+wget -O docker-volume-netshare https://github.com/ContainX/docker-volume-netshare/releases/download/v0.34/docker-volume-netshare_0.34_linux_amd64-bin
+chmod a+x ./docker-volume-netshare
+sudo ./docker-volume-netshare cifs --verbose=true
+```
+
+---
 
 [flocker  example install]: https://devops.profitbricks.com/tools/flocker/
 [Flocker]:https://flocker-docs.clusterhq.com/en/latest/docker-integration/
