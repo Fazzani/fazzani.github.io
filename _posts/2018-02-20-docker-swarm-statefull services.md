@@ -92,7 +92,7 @@ sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
 docker run -i -t --volume-driver=nfs -v 18.194.42.216/mnt/test_volume:/data ubuntu /bin/bash
 ```
 
-> add to autoload
+> add to autoload by creating new service into systemd
 
 ```sh
 sudo tee /etc/systemd/system/dockerefs.service <<-'EOF'
