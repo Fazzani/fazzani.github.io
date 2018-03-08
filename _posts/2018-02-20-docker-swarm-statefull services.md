@@ -92,6 +92,12 @@ sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
 docker run -i -t --volume-driver=nfs -v 18.194.42.216/mnt/test_volume:/data ubuntu /bin/bash
 ```
 
+> It is recommend to try mounting an NFS volume to eliminate any configuration issues prior to running the plugin:
+
+```sh
+sudo mount -t nfs4 1.1.1.1:/mountpoint /target/mount
+```
+
 > add to autoload by creating new service into systemd
 
 ```sh
