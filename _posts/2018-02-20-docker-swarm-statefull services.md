@@ -120,7 +120,15 @@ EOF
 
 > Start the service
 
+```sh
 sudo systemctl start docker-volume-netshare.service
+```
+
+> Restart Nfs server
+
+```sh
+sudo service nfs-kernel-server restart
+```
 
 > Test verbose mount
 
@@ -132,7 +140,6 @@ chmod a+x ./docker-volume-netshare
 sudo ./docker-volume-netshare cifs --verbose=true
 docker run -it --rm -v --volume-driver=nfs 18.194.42.216/tmp:/mount/tmp --name share_vol alpine ash
 
-```
 
 ---
 After discovering that this is massively undocumented,here's the correct way to mount a NFS volume using stack and docker compose.
