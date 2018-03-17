@@ -143,5 +143,6 @@ hopefully benefits both sides.
 - [kargo  cli example](https://asciinema.org/a/065mhh5pzmxcwxgp6evebarvd?speed=4)
 - [vSphere](https://github.com/kubernetes-incubator/kubespray/blob/master/docs/vsphere.md)
 - [Awesome links](https://ramitsurana.github.io/awesome-kubernetes/)
+- [Sample app can easly be upgraded](https://github.com/honestbee/hello-drone-helm)
 
 [helm]:https://docs.helm.sh
