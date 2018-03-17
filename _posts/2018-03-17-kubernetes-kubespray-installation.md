@@ -1,3 +1,10 @@
+---
+layout: default
+title: Kubespray installation
+categories: [kubernetes, kubespray, cluster]
+category: kubernetes
+date:   2018-03-17 16:16:01 -0600
+---
 # Clusturing Kubernetes with Kubespray
 
 ## Installation procedure
