@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 ## Enable Oh-my-zsh plugins
 
 ```sh
-cd .oh-my-zsh/custom/plugins
+cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting
 
