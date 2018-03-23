@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kubespray installation
-categories: [kubernetes, kubespray, cluster]
+categories: [kubernetes, kubespray, cluster, ansible]
 category: kubernetes
 date:   2018-03-17 16:16:01 -0600
 ---
