@@ -106,6 +106,33 @@ ansible-playbook -i inventory/mycluster/hosts.ini remove-node.yml -b -v \
   --private-key=~/.ssh/private_key
 ```
 
+### Create a admin dashboard token
+
+```sh
+
+cat <<'EOF' > dashboard-admin.yaml 
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: kubernetes-dashboard
+  labels:
+    k8s-app: kubernetes-dashboard
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: kubernetes-dashboard
+  namespace: kube-system
+
+EOF
+
+kubectl create -f dashboard-admin.yaml 
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep kubernetes-dashboard | awk '{print $1}')
+```
+
+
 ## Comparisons
 
 ### Kubespray vs [Kops](https://github.com/kubernetes/kops)
