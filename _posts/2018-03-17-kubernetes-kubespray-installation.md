@@ -36,7 +36,8 @@ nano inventory/mycluster/group_vars/all.yml
 nano inventory/mycluster/group_vars/k8s-cluster.yml
 
 # Launching ansible playbook to create cluster
-ansible-playbook -i inventory/mycluster/hosts.ini cluster.yml -b -v -T 60 --private-key=~/.ssh/id_rsa -e kube_api_passwd=CentOS2018 -e dashboard_enabled=true --flush-cache
+ansible-playbook -i inventory/mycluster/hosts.ini cluster.yml -b -v -T 60 \
+--private-key=~/.ssh/id_rsa -e kube_api_passwd=CentOS2018 -e dashboard_enabled=true --flush-cache
 ```
 
 ## Dashboard access
@@ -88,7 +89,8 @@ yum remove -y kubeadm kubectl kubelet kubernetes-cni kube*
 > Reset cluster with kubespray
 
 ```sh
-ansible-playbook -i inventory/mycluster/hosts.ini reset.yml -b -v --private-key=~/.ssh/id_rsa
+ansible-playbook -i inventory/mycluster/hosts.ini reset.yml -b -v \
+--private-key=~/.ssh/id_rsa
 ```
 
 ## Scaling cluster
