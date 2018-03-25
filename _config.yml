@@ -37,6 +37,10 @@ algolia:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+lsi: false
+incremental: false
+
 theme: jekyll-theme-basically-basic
 plugins: # previsously gems
   - jekyll-feed
@@ -45,6 +49,15 @@ plugins: # previsously gems
   - jekyll-paginate
 feed:
   path: atom.xml
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Europe/Paris # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
