@@ -15,6 +15,11 @@
       "region": "Ile de France"
     },
     "profiles": [{
+        "network": "Linkedin",
+        "username": "heni-fazzani-5a006921",
+        "url": "https://www.linkedin.com/in/heni-fazzani-5a006921/"
+      },
+      {
         "network": "Github",
         "username": "Fazzani",
         "url": "https://github.com/fazzani"
