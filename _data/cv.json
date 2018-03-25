@@ -1,10 +1,10 @@
 {
   "basics": {
-    "name": "{{ site.author.name }}",
+    "name": "Fazzani Heni",
     "label": "Very extravagant man",
-    "picture": "{{ site.author.picture }}",
-    "email": "{{ site.email }}",
-    "phone": "(0033) 6 67 42 64 21",
+    "picture": "https://fr.linkedin.com/in/heni-fazzani-5a006921",
+    "email": "fazzani.heni@outlook.com",
+    "phone": "(+33) 6 67 42 64 21",
     "website": "https://synker.ovh",
     "summary": "",
     "location": {
