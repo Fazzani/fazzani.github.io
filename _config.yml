@@ -20,7 +20,7 @@ description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name:
+  name: Fazzani Heni
   twitter:
   picture:
 twitter_username:
@@ -30,7 +30,7 @@ search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
 algolia:
-  application_id: # YOUR_APPLICATION_ID
+  application_id: Synker
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
