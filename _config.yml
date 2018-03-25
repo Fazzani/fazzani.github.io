@@ -26,6 +26,9 @@ author:
 twitter_username:
 github_username: Fazzani
 logo:  "/assets/images/synker-192x192.png"
+google_analytics: UA-2011187-6
+disqus:
+  shortname: basically-basic-theme
 search: true # true, false (default)
 search_full_content: true # true, false (default)
 search_provider:  lunr # (default), algolia
