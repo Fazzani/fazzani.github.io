@@ -1,9 +1,9 @@
 {
   "basics": {
-    "name": "Fazzani Heni",
+    "name": "{{ site.author.name }}",
     "label": "Very extravagant man",
-    "picture": "",
-    "email": "dugan.hash@mailinator.com",
+    "picture": "{{ site.author.picture }}",
+    "email": "{{ site.email }}",
     "phone": "(0033) 6 67 42 64 21",
     "website": "https://synker.ovh",
     "summary": "",
