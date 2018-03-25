@@ -3,7 +3,7 @@ layout: default
 title: Docker machine for remote access (Generic)
 categories: docker
 category: docker
-date:   2015-11-17 16:16:01 -0600
+date: 2015-11-17 16:16:01 -0600
 ---
 # Creating New Generic Docker machine
 

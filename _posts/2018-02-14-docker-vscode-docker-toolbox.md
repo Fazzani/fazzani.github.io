@@ -3,7 +3,7 @@ layout: default
 title: Working with Docker toolbox and VS Code
 categories: [docker, vscode]
 category: docker
-date:   2015-11-17 16:16:01 -0600
+date: 2015-11-17 16:16:01 -0600
 ---
 # Working with Docker toolbox and VS Code
 

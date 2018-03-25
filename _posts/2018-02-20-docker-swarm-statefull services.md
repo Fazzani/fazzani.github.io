@@ -3,7 +3,7 @@ layout: default
 title: Statefull docker swarm
 categories: [docker, swarm, persistence]
 category: docker
-date:   2015-11-17 16:16:01 -0600
+date: 2015-11-17 16:16:01 -0600
 ---
 # Statefull docker swarm
 

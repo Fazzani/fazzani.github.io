@@ -3,7 +3,7 @@ layout: default
 title: Notes & Tips => Glusterfs kubernetes Heketi
 categories: [GlusterFS, k8s, kubernetes, Heketi]
 category: linux
-date:   2018-03-25 18:16:01 0100
+date: 2018-03-25 18:16:01 0100
 ---
 # Notes
 
@@ -32,6 +32,8 @@ kubectl config --kubeconfig=config set-context multi-master-ctx2 --cluster=multi
 kubectl config --kubeconfig=config use-context multi-master-ctx2
 kubectl config --kubeconfig=config set-credentials user_master2 --token=`token`
 ```
+
+---
 
 ## Tips
 
@@ -71,6 +73,8 @@ Run these commands on all cluster nodes:
 * rm -rf /var/lib/glusterd/*
 * mv /tmp/glusterd.info /var/lib/glusterd/.
 * service glusterd start
+
+---
 
 ## References
 

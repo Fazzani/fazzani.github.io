@@ -3,7 +3,7 @@ layout: default
 title: Glusterfs kubernetes installation
 categories: [GlusterFS, k8s, kubernetes, Heketi]
 category: linux
-date:   2018-03-24 16:16:01 -0600
+date: 2018-03-24 16:16:01 -0600
 ---
 # K8S - GlsterFS
 
@@ -132,6 +132,8 @@ ln -vsnf ${HEKETI_BIN}_${HEKETI_VERSION} ${HEKETI_BIN} && cd
 unset HEKETI_BIN HEKETI_VERSION HEKETI_OS
 ```
 
+---
+
 ## Tips
 
 ### Glustfs commands
@@ -152,6 +154,8 @@ rm -rf /var/lib/glusterd/*
 mv /tmp/glusterd.info /var/lib/glusterd/.
 service glusterd start
 ```
+
+---
 
 ## References
 

@@ -3,7 +3,7 @@ layout: default
 title: zsh terminal install
 categories: [zsh, oh-my-zsh, plugins, themes]
 category: linux
-date:   2018-03-17 16:16:01 -0600
+date: 2018-03-17 16:16:01 -0600
 ---
 # Installation procedure
 
