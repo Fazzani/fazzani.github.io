@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
+title: Synker Blog
 email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
@@ -24,11 +24,11 @@ author:
   twitter:
   picture:
 twitter_username:
-github_username:
+github_username: Fazzani
 logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
-search_full_content: false # true, false (default)
-search_provider: # lunr (default), algolia
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider:  lunr # (default), algolia
 algolia:
   application_id: Synker
   index_name: # YOUR_INDEX_NAME
