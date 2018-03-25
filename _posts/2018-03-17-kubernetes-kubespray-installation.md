@@ -132,6 +132,16 @@ kubectl create -f dashboard-admin.yaml
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep kubernetes-dashboard | awk '{print $1}')
 ```
 
+### kubectl configure context access
+
+```sh
+mkdir ~/.kube && cd ~/.kube && touch config
+
+kubectl config --kubeconfig=config set-cluster multi-master2 --server=https://x.x.x.x:6443 --insecure-skip-tls-verify
+kubectl config --kubeconfig=config set-credentials user_master2 --token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC10b2tlbi1sdDl4ZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImYxMzFlMWM5LTMwMWMtMTFlOC1iN2QwLTAwNTA1NmFlNDJjMyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTprdWJlcm5ldGVzLWRhc2hib2FyZCJ9.gBXjle_oGSxRKUBmJ7_aJUUykBDipj4YezSGe5zBFwergpL25jPPyGmgTnzBeP3N5FzHxA2rkFZuxslQ04yccxEg6h3wKztQD8hXMOgPmwj330vUP0-_obLyi83G3Ta7QmlY23-Ml2ely2mvZsW_hZNg1sMCjKCi9Uu3s5PEZkdD9dCqRTsD_3j-tIpifjXQT29Gk-c0ZlPQyF8V1m--E2q2-cqmpXc_g-vsQBw7nYrm0iEfnQCB7aG5f2NiGH-Urx3uJSsGOFP_HBYmzXpWXghuH_G7Edl_HrUdsk8qA_af702J8XiYyhOdrA3Kr7epMgFMYh1Dsd2ck5GRLsEBdg
+kubectl config --kubeconfig=config set-context multi-master-ctx2 --cluster=multi-master2 --namespace=default --user=user_master2
+kubectl config --kubeconfig=config use-context multi-master-ctx2
+```
 
 ## Comparisons
 
