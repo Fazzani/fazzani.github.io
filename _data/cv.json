@@ -81,15 +81,16 @@
     }
   ],
   "education": [{
-    "institution": "University of Ointment",
-    "area": "Digital Skillets",
-    "studyType": "Bachelor",
-    "startDate": "2011-06-01",
-    "endDate": "2014-01-01",
+    "institution": "The Higher Institute of Computer Science (ISI)",
+    "area": "Software Engineering",
+    "studyType": "Engineer",
+    "startDate": "2004-09-15",
+    "endDate": "207-06-30",
     "gpa": "4.0",
     "courses": [
-      "DB1101 - Perpendicular Crosstalk",
-      "CS2011 - Introduction to Moisturization"
+      "Computer Language Engineering",
+      "Computer System Engineering",
+      "Performance Engineering of Software Systems"
     ]
   }],
   "skills": [{
@@ -106,7 +107,10 @@
     "keywords": [
       ".net",
       "SQL",
-      "Architecture"
+      "Architecture",
+      "DevOps",
+      "Aws",
+      "Frontend developement"
     ]
   }],
   "languages": [{
@@ -131,9 +135,5 @@
       "Programming",
       "Technology"
     ]
-  }],
-  "references": [{
-    "name": " Nannette Nananacci",
-    "reference": "It is my pleasure to recommend Dugan Nash, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
   }]
 }
