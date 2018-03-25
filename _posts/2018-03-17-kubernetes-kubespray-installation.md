@@ -12,7 +12,7 @@ tags:
 
 ## Installation procedure
 
-```ssh
+```sh
 # Install requirements on local machine
 yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 yum -y install python36u
