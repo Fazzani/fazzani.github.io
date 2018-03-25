@@ -80,17 +80,6 @@
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Steve's Meat Market",
-    "position": "Assistant",
-    "website": "",
-    "startDate": "1995-01-01",
-    "endDate": "1997-03-20",
-    "summary": "Ground up some sort of grasshopper mash for fishing.",
-    "highlights": [
-      "Awarded a 'Helium Biscuit'"
-    ]
-  }],
   "education": [{
     "institution": "University of Ointment",
     "area": "Digital Skillets",
@@ -103,37 +92,23 @@
       "CS2011 - Introduction to Moisturization"
     ]
   }],
-  "awards": [{
-    "title": "Warble Pioneer Award",
-    "date": "2001-11-01",
-    "awarder": "Levi Goulet",
-    "summary": "Have you seen my turtle?"
-  }],
-  "publications": [{
-    "name": "Radio Julius",
-    "publisher": "Tanyo Lubbock",
-    "releaseDate": "2014-10-01",
-    "website": "https://en.rhy.es",
-    "summary": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test."
-  }],
   "skills": [{
-      "name": "Audio Juggling",
-      "level": "Master",
-      "keywords": [
-        "Ointment",
-        "Voltor",
-        "Millipedes"
-      ]
-    },
-    {
-      "name": "Bruschotti",
-      "level": "Satisfactory",
-      "keywords": [
-        "Snow camp",
-        "Owl"
-      ]
-    }
-  ],
+    "name": "Management",
+    "level": "Master",
+    "keywords": [
+      "Teamwork",
+      "Decision Making",
+      "Motivational"
+    ]
+  }, {
+    "name": "Technical",
+    "level": "Master",
+    "keywords": [
+      ".net",
+      "SQL",
+      "Architecture"
+    ]
+  }],
   "languages": [{
     "language": "Arab",
     "fluency": "Native speaker"
