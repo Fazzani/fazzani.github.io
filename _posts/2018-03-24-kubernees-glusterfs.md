@@ -1,5 +1,6 @@
 ---
 title: Glusterfs kubernetes installation
+excerpt: "Make your kubernetes services stateful with Glusterfs."
 categories: [GlusterFS, k8s, kubernetes, Heketi]
 category: linux
 last_modified_at: 2018-03-24 16:16:01 -0600
