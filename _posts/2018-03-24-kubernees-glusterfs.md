@@ -53,6 +53,7 @@ service glusterd start
 
 ## References
 
-[Gluster install Source valid]:(https://github.com/kubernetes/examples/tree/master/staging/volumes/glusterfs)
-[Gluster install heketi to test]:(https://techdev.io/en/developer-blog/deploying-glusterfs-in-your-bare-metal-kubernetes-cluster)
-[Source]:(https://github.com/psyhomb/heketi)
+* [Gluster install Source valid](https://github.com/kubernetes/examples/tree/master/staging/volumes/glusterfs)
+* [Gluster install heketi to test](https://techdev.io/en/developer-blog/deploying-glusterfs-in-your-bare-metal-kubernetes-cluster)
+* [Heketi Source](https://github.com/psyhomb/heketi)
+* [Understanding Gluster architecture && How Install it on CentOS 7](https://www.slothparadise.com/how-to-install-glusterfs-on-centos-7/)
