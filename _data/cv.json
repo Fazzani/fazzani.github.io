@@ -135,14 +135,26 @@
     }
   ],
   "languages": [{
-    "language": "Nonsense",
+    "language": "Arab",
     "fluency": "Native speaker"
+  }, {
+    "language": "French",
+    "fluency": "bilingual"
+  }, {
+    "language": "English",
+    "fluency": "Professional working"
   }],
   "interests": [{
-    "name": "The Information Superhighway",
+    "name": "Sport",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "Football",
+      "Tennis"
+    ]
+  }, {
+    "name": "Coding",
+    "keywords": [
+      "Programming",
+      "Technology"
     ]
   }],
   "references": [{
