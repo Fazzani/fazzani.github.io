@@ -25,7 +25,7 @@ author:
   picture: https://fr.linkedin.com/in/heni-fazzani-5a006921
 twitter_username:
 github_username: Fazzani
-logo:  "/assets/icons/favicon-32x32.png"
+logo:  "/assets/icons/synker-32x32.png"
 search: true # true, false (default)
 search_full_content: true # true, false (default)
 search_provider:  lunr # (default), algolia
