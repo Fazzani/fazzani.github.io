@@ -32,17 +32,54 @@
     ]
   },
   "work": [{
-    "company": "SeLoger",
-    "position": "Lead dev",
-    "website": "https://seloger.com",
-    "startDate": "2017-07-21",
-    "endDate": "",
-    "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-    "highlights": [
-      "Concealed nipper in embrodiery.",
-      "Dealt with Elastical Gomez on a daily basis."
-    ]
-  }],
+      "company": "SeLoger",
+      "position": "Lead dev",
+      "website": "https://seloger.com",
+      "startDate": "2017-07-21",
+      "endDate": "",
+      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "highlights": [
+        "Concealed nipper in embrodiery.",
+        "Dealt with Elastical Gomez on a daily basis."
+      ]
+    },
+    {
+      "company": "BusinessLine",
+      "position": "Lead dev",
+      "website": "https://BusinessLine.com",
+      "startDate": "2015-04-01",
+      "endDate": "2017-05-02",
+      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "highlights": [
+        "Concealed nipper in embrodiery.",
+        "Dealt with Elastical Gomez on a daily basis."
+      ]
+    },
+    {
+      "company": "Leetchi.com",
+      "position": "Lead dev",
+      "website": "https://Leetchi.com",
+      "startDate": "2014-09-02",
+      "endDate": "2015-04-30",
+      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "highlights": [
+        "Concealed nipper in embrodiery.",
+        "Dealt with Elastical Gomez on a daily basis."
+      ]
+    },
+    {
+      "company": "Spir Communication",
+      "position": "Developper",
+      "website": "http://www.spir.com",
+      "startDate": "2011-11-02",
+      "endDate": "2014-07-31",
+      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "highlights": [
+        "Concealed nipper in embrodiery.",
+        "Dealt with Elastical Gomez on a daily basis."
+      ]
+    }
+  ],
   "volunteer": [{
     "organization": "Steve's Meat Market",
     "position": "Assistant",
