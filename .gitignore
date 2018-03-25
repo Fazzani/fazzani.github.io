@@ -1,4 +1,9 @@
-_site
-.sass-cache
-Gemfile.lock
-*.gem
+# Generated site
+/_site
+
+# Local packages
+/.bundle/ruby/
+
+# Temporary files
+.sass-cache/
+.jekyll-metadata
