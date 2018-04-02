@@ -62,7 +62,7 @@ for each in $(docker-machine ls -q); do; docker-machine ssh $each "curl -sSL htt
 2. Create volume
 
 ```sh
-docker volume create -d rexray/csi-nfs -o host=151.80.235.155 -o export=/webgrab_volume webgrab
+docker volume create -d rexray/csi-nfs -o host=151.80.235.155 -o export=/mnt/nfs webgrab
 ```
 
 - docker compose volume config
@@ -78,6 +78,28 @@ volumes:
 ```
 
 ### NetShare
+
+#### NFS server install
+
+> on server
+
+```sh
+sudo mkdir /mnt/nfs
+sudo chown nobody:nogroup /mnt/nfs
+echo "/mnt/nfs       *(rw,sync,no_root_squash,no_subtree_check)" >> /etc/exports
+sudo exportfs -a
+sudo service nfs-kernel-server restart
+```
+
+> on each client
+
+```sh
+mkdir /mnt/nfs
+sudo mount -t nfs4 151.80.235.155:/mnt/nfs /mnt/nfs
+df -h
+```
+
+#### Netshare installation
 
 > Install netshare plugin on all hosts as per http://netshare.containx.io/docs/getting-started
 [another source for install](https://attx-project.github.io/Shared-NFS-Swarm-Cloud.html)
