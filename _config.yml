@@ -103,5 +103,6 @@ defaults:
     values:
       layout: post
       read_time: true
-destination: _posts
-branch: master
+# Jekyll source / destination
+source: .
+destination: _site
