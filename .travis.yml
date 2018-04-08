@@ -1,6 +1,7 @@
 language: ruby
 rvm: 2.4
 install: bundle install
+script: bundle exec rake deploy
 deploy:
   provider: pages
   skip_cleanup: true
