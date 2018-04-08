@@ -85,8 +85,8 @@ SSH_USERNAME = '128keaton.com'.freeze
 SSH_HOST = 'my-host'.freeze
 IMAGES_DIR = __dir__ + '/images/'
 
-SOURCE_BRANCH = 'master'.freeze
-DESTINATION_BRANCH = 'gh-pages'.freeze
+DESTINATION_BRANCH = 'master'.freeze
+SOURCE_BRANCH = 'gh-pages'.freeze
 
 def check_destination
     unless Dir.exist? CONFIG['destination']
