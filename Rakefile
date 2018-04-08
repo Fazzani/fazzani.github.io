@@ -5,7 +5,6 @@ require 'rake'
 require 'date'
 require 'yaml'
 
-
 def listen_ignore_paths(base, options)
   [
     /_config\.ya?ml/,
@@ -86,7 +85,7 @@ SSH_USERNAME = '128keaton.com'.freeze
 SSH_HOST = 'my-host'.freeze
 IMAGES_DIR = __dir__ + '/images/'
 
-SOURCE_BRANCH = 'pre-publish'.freeze
+SOURCE_BRANCH = 'master'.freeze
 DESTINATION_BRANCH = 'gh-pages'.freeze
 
 def check_destination
