@@ -1,7 +1,6 @@
 require "bundler/gem_tasks"
 require "jekyll"
 require "listen"
-require 'rake-jekyll'
 require 'rake'
 require 'date'
 require 'yaml'
