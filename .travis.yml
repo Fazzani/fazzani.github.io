@@ -1,9 +1,10 @@
 language: ruby
-rvm: 2.2
+rvm: 2.4
 install: bundle install
 deploy:
   provider: pages
   skip_cleanup: true
+  keep-history: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
     branch: master # Or `gh-pages`
