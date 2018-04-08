@@ -2,7 +2,7 @@ language: ruby
 rvm: 2.4
 cache: bundler
 install: bundle install
-script: bundle exec rake site:deploy --quiet
+script: bundle exec rake site:deploy --trace
 deploy:
   provider: pages
   skip_cleanup: true
