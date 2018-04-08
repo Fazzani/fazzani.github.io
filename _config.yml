@@ -25,6 +25,7 @@ author:
   picture: https://fazzani.github.io/assets/images/me.jpg
 twitter_username:
 github_username: Fazzani
+repo: https://github.com/Fazzani/fazzani.github.io
 logo:  "/assets/images/synker-192x192.png"
 google_analytics: UA-2011187-6
 disqus:
@@ -102,3 +103,5 @@ defaults:
     values:
       layout: post
       read_time: true
+destination: _posts
+branch: master
