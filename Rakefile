@@ -1,10 +1,7 @@
 require "bundler/gem_tasks"
 require "jekyll"
 require "listen"
-require 'rspec/core/rake_task'
 
-task :default => :spec
-RSpec::Core::RakeTask.new
 
 def listen_ignore_paths(base, options)
   [
@@ -78,3 +75,4 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+Rake::Jekyll::GitDeployTask.new
