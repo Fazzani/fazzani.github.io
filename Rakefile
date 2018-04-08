@@ -4,7 +4,6 @@ require "listen"
 require 'rake'
 require 'date'
 require 'yaml'
-require 'net/scp'
 
 
 def listen_ignore_paths(base, options)
