@@ -14,10 +14,11 @@
       "countryCode": "FR",
       "region": "Ile de France"
     },
-    "profiles": [{
+    "profiles": [
+      {
         "network": "Linkedin",
-        "username": "heni-fazzani-5a006921",
-        "url": "https://www.linkedin.com/in/heni-fazzani-5a006921/"
+        "username": "heni-fazzani",
+        "url": "https://www.linkedin.com/in/heni-fazzani/"
       },
       {
         "network": "Github",
@@ -31,109 +32,126 @@
       }
     ]
   },
-  "work": [{
+  "work": [
+    {
       "company": "SeLoger",
-      "position": "Lead dev",
+      "position": "Architecte technique",
       "website": "https://seloger.com",
-      "startDate": "2017-07-21",
+      "startDate": "2017-05-21",
       "endDate": "",
-      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "summary": [
+        "Accompagnement des équipes dans la mise en place de leurs solutions.",
+        "Animation d'ateliers et des espaces de travail transverses.",
+        "Participation à la mise en place des briques transverses.",
+        "Veille technique"
+      ],
       "highlights": [
-        "Concealed nipper in embrodiery.",
-        "Dealt with Elastical Gomez on a daily basis."
+        "Mise en place des différentes plateformes d'intégration continue, de packaging, de déploiement et d'analyse de la qualité du code source.",
+        "Migration des solutions SeLoger sur AWS",
+        "Documentation technique"
       ]
     },
     {
       "company": "BusinessLine",
-      "position": "Lead dev",
+      "position": "Archi/Team Leader",
       "website": "https://BusinessLine.com",
       "startDate": "2015-04-01",
       "endDate": "2017-05-02",
-      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "summary": ["Refonte de la solution ITSM ainsi que tous les services qui gravitent autour.", "Formation et appui des développeurs."],
       "highlights": [
-        "Concealed nipper in embrodiery.",
-        "Dealt with Elastical Gomez on a daily basis."
+        "Mise en place et suivi de méthodes de développements agiles recouvrant l’acceptation des spécifications, les développements et les tests de tout type.",
+        "Participation à l’amélioration du produit, propositions et spécifications des évolutions techniques utiles et nécessaires : architecture, amélioration des performances (backend et frontend)",
+        "Documentation technique des briques utilisées, sur l’architecture adoptée, des modèles, d’un point de vu développement mais aussi d’infogérance, bonnes pratiques, nomenclature utilisés."
       ]
     },
     {
       "company": "Leetchi.com",
-      "position": "Lead dev",
+      "position": "Consultant",
       "website": "https://Leetchi.com",
       "startDate": "2014-09-02",
       "endDate": "2015-04-30",
-      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-      "highlights": [
-        "Concealed nipper in embrodiery.",
-        "Dealt with Elastical Gomez on a daily basis."
-      ]
+      "summary": ["Faire de MangoPay à un produit autonome, sans aucune dépendance de Leetchi et de continuer à le faire évoluer."],
+      "highlights": ["Scinder les applications Leetchi et MangoPay.", "Mise en place de la CICD et des tests d'intégrations pour éventuelles mise en production plus sereines."]
     },
     {
-      "company": "Spir Communication",
-      "position": "Developper",
+      "company": "Regicom",
+      "position": "Ingénieur Développeur (.NET) / Référent technique",
       "website": "http://www.spir.com",
       "startDate": "2011-11-02",
       "endDate": "2014-07-31",
-      "summary": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+      "summary": [
+        "La préparation de l’environnement du développement et de l’architecture del’application.",
+        "L’encadrement de l’équipe techniquement et fonctionnellement",
+        "Référent sur les bonnes pratiques de développement et de la qualité de code"
+      ],
+      "highlights": ["TopAnnonces Mobile", "LesBonnesPromos.fr", "TopAnnonces.fr."]
+    },
+    {
+      "company": "BGI",
+      "position": "Ingénieur Développeur (.NET) / Référent technique",
+      "website": "http://www.spir.com",
+      "startDate": "2008-03-01",
+      "endDate": "2010-06-31",
+      "summary": ["Encadrement et l'accompagnement des équipes", "Participation à l'architecture et au développement des différentes solutions"],
       "highlights": [
-        "Concealed nipper in embrodiery.",
-        "Dealt with Elastical Gomez on a daily basis."
+        "La refonte de système d’information national de la société SONEDE",
+        "La refonte de la solutions de gestion d’énergie (Eau, Gaz, Electricité, et Déchets)",
+        "Projet Portail GRD: gestion et suivi des prestations et les flux entre le GRD et le fournisseur via des Web Services.",
+        "Gestion des Flux: gestion des échanges des flux de données normalisés systématique entre les fournisseurs et les Gérants de Réseau et de distribution (GRD) pour Enerest et GDS (Gaz de Strasbourg)",
+        "Gestion des interventions: gestion des ressources humaines et matériels afin de leurs garantir une bonne planification en cas d’intervention"
       ]
     }
   ],
-  "education": [{
-    "institution": "The Higher Institute of Computer Science (ISI)",
-    "area": "Software Engineering",
-    "studyType": "Engineer",
-    "startDate": "2004-09-15",
-    "endDate": "207-06-30",
-    "gpa": "4.0",
-    "courses": [
-      "Computer Language Engineering",
-      "Computer System Engineering",
-      "Performance Engineering of Software Systems"
-    ]
-  }],
-  "skills": [{
-    "name": "Management",
-    "level": "Master",
-    "keywords": [
-      "Teamwork",
-      "Decision Making",
-      "Motivational"
-    ]
-  }, {
-    "name": "Technical",
-    "level": "Master",
-    "keywords": [
-      ".net",
-      "SQL",
-      "Architecture",
-      "DevOps",
-      "Aws",
-      "Frontend developement"
-    ]
-  }],
-  "languages": [{
-    "language": "Arab",
-    "fluency": "Native speaker"
-  }, {
-    "language": "French",
-    "fluency": "Bilingual"
-  }, {
-    "language": "English",
-    "fluency": "Professional working"
-  }],
-  "interests": [{
-    "name": "Sport",
-    "keywords": [
-      "Football",
-      "Tennis"
-    ]
-  }, {
-    "name": "Coding",
-    "keywords": [
-      "Programming",
-      "Technology"
-    ]
-  }]
+  "education": [
+    {
+      "institution": "Institut supérieur d'informatique",
+      "studyType": "Diplôme National d’Ingénieur",
+      "area": "Génie logiciel",
+      "startDate": "2004-09-15",
+      "endDate": "2007-06-30"
+    },
+    {
+      "institution": "ISSAT",
+      "studyType": "Technicien supérieur en informatique",
+      "area": "Génie logiciel",
+      "startDate": "2004-09-15",
+      "endDate": "2007-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Diplôme National d’Ingénieur",
+      "level": "Ingénieur",
+      "keywords": ["Teamwork", "Decision Making", "Motivational"]
+    },
+    {
+      "name": "Technical",
+      "level": "Master",
+      "keywords": [".net", "SQL", "Architecture", "DevOps", "Aws", "Frontend developement"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Arab",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Bilingual"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sport",
+      "keywords": ["Football", "Tennis"]
+    },
+    {
+      "name": "Coding",
+      "keywords": ["Programming", "Technology"]
+    }
+  ]
 }

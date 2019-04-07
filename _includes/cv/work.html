@@ -30,7 +30,9 @@
         </div>
         {% if w.summary %}
           <div class="summary">
-            <p>{{ w.summary }}</p>
+          {% for summary in w.summary %}
+            <p>{{ summary }}</p>
+          {% endfor %}
           </div>
         {% endif %}
         {% if w.highlights %}
