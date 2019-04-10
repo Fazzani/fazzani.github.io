@@ -2,7 +2,7 @@
 title: Working with Docker toolbox and VS Code
 categories: [docker, vscode]
 category: docker
-last_modified_at: 2015-11-17 16:16:01 -0600
+last_modified_at: 2018-02-14 16:16:01 -0600
 tags:
   - docker
   - vscode
