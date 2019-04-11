@@ -127,7 +127,7 @@
     {
       "name": "Technical",
       "level": "Master",
-      "keywords": [".net", "SQL", "Architecture", "DevOps", "Aws", "Frontend developement"]
+      "keywords": [".net", "Architecture", "DevOps", "Fullstack developement", "Aws"]
     }
   ],
   "languages": [
@@ -147,7 +147,7 @@
   "interests": [
     {
       "name": "Sport",
-      "keywords": ["Football", "Tennis"]
+      "keywords": ["Football"]
     },
     {
       "name": "Coding",
