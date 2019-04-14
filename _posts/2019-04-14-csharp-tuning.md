@@ -5,7 +5,7 @@ category: .net
 last_modified_at: 2019-04-14 14:16:01 0100
 ---
 
-# C# Tuning
+# C# tuning
 
 It is believed that 97% of the time your code can be optimized, but instead you should focus on the 3% that is easy to optimize and can lead to maximum improvement in performance. Also, keep in mind you aren't doing premature optimization, i.e. thinking of the performance while coding for the first time. It is always better to write the code first and then optimize it later.
 
@@ -70,15 +70,18 @@ var a = str2.Substring(j - 1, 1);
 var a = str2.AsSpan().Slice(j - 1, 1)[0];
 ```
 
+[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://channel9.msdn.com/Events/Connect/2017/T125)
+
 ## NB
 
 > DateTime is a struct.
 > String is a Class
 > boxing => ValueType to object type, inboxing object type => valueType
+> Span<T> for synchronized methods and Memory<T> for async
 
 ![c# 7.2](https://i.imgur.com/yXN3PE1.png "c#7.2 optimizations")
 
-### Tools
+## Tools
 
 * [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
 * [Diagnosers](https://benchmarkdotnet.org/articles/configs/diagnosers.html)
