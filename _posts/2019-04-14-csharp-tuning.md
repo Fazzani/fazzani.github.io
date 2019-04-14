@@ -76,4 +76,4 @@ Here are some of the tips that can improve C# code performance radically.
 
 ## References
 
-* [Référence 1](https://stackify.com/net-application-optimization/)
+* [Reference 1](https://stackify.com/net-application-optimization/)
