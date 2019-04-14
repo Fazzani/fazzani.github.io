@@ -58,9 +58,17 @@ Here are some of the tips that can improve C# code performance radically.
 
 10. Avoid Boxing Unboxing method
 
-   For mission-critical applications, it’s always better to avoid boxing and unboxing. However, in .NET Core, we have many other types that internally use objects and perform boxing and unboxing. Most of the types under System.Collections and System.Collections.Specialized use objects and object arrays for internal storage, and when we store primitive types in these collections, they perform boxing and convert each primitive value to an object type, adding extra overhead and negatively impacting the performance of the application. Other types of System.Data, namely DateSet, DataTable, and DataRow, also use object arrays under the hood.
+    For mission-critical applications, it’s always better to avoid boxing and unboxing. However, in .NET Core, we have many other types that internally use objects and perform boxing and unboxing. Most of the types under System.Collections and System.Collections.Specialized use objects and object arrays for internal storage, and when we store primitive types in these collections, they perform boxing and convert each primitive value to an object type, adding extra overhead and negatively impacting the performance of the application. Other types of System.Data, namely DateSet, DataTable, and DataRow, also use object arrays under the hood.
 
-   Types under the System.Collections.Generic namespace or typed arrays are the best approaches to use when performance is the primary concern. For example, HashSet, LinkedList, and List are all types of generic collections.
+    Types under the System.Collections.Generic namespace or typed arrays are the best approaches to use when performance is the primary concern. For example, HashSet, LinkedList, and List are all types of generic collections.
+
+11. Replace Substring by Span.Slice
+
+```csharp
+var a = str2.Substring(j - 1, 1);
+#to
+var a = str2.AsSpan().Slice(j - 1, 1)[0];
+```
 
 ## NB
 
@@ -73,6 +81,8 @@ Here are some of the tips that can improve C# code performance radically.
 ### Tools
 
 * [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
+* [Diagnosers](https://benchmarkdotnet.org/articles/configs/diagnosers.html)
+* [Perfview](https://github.com/Microsoft/perfview)
 
 ## References
 
