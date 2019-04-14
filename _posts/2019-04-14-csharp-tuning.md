@@ -107,6 +107,8 @@ AggressiveInlining. The JIT compiler logically determines which methods to inlin
 [MethodImpl(MethodImplOptions.AggressiveInlining)]
 ```
 
+>If a large method is called in many places in a program, inlining it will reduce locality of reference and may ruin performance.
+
 ## NB
 
 > DateTime is a struct.
