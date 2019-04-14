@@ -74,6 +74,39 @@ Here are some of the tips that can improve C# code performance radically.
 
 12. Use ArrayPool<T> for large arrays to avoid Full GC.
 
+## inline methods
+
+inlining a method/property means that the compiler takes it and replaces the calls to it with its contents (making sure correct variables etc). This is not something that is C# specific.
+This is done for performance normally.
+
+```csharp
+//For example, with this method and call:
+private long Add(int x, int y)
+{
+   return x + y;
+}
+
+var z = Add(x, y);
+
+//The compiler may inline it as (eliminating the method in the process):
+
+var z = x + y;
+```
+
+```csharp
+[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+```
+
+>The MethodImplOptions.NoInlining attribute instructs the JIT compiler to not perform an extremely common optimization. We will return to this later.
+
+### AggressiveInlining
+
+AggressiveInlining. The JIT compiler logically determines which methods to inline. But sometimes we know better than it does. With AggressiveInlining, we give the compiler a hint. We tell it that the method should be inlined.
+
+```csharp
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
+```
+
 ## NB
 
 > DateTime is a struct.
