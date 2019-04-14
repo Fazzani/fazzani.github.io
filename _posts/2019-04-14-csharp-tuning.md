@@ -83,6 +83,7 @@ var a = str2.AsSpan().Slice(j - 1, 1)[0];
 * [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
 * [Diagnosers](https://benchmarkdotnet.org/articles/configs/diagnosers.html)
 * [Perfview](https://github.com/Microsoft/perfview)
+* [CLR MD](https://github.com/microsoft/clrmd)
 
 ## References
 
