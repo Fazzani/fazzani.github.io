@@ -64,13 +64,15 @@ Here are some of the tips that can improve C# code performance radically.
 
 11. Replace Substring by Span.Slice
 
-```csharp
-var a = str2.Substring(j - 1, 1);
-#to
-var a = str2.AsSpan().Slice(j - 1, 1)[0];
-```
+    ```csharp
+    var a = str2.Substring(j - 1, 1);
+    #to
+    var a = str2.AsSpan().Slice(j - 1, 1)[0];
+    ```
 
-[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://channel9.msdn.com/Events/Connect/2017/T125)
+    [![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://channel9.msdn.com/Events/Connect/2017/T125)
+
+12. Use ArrayPool<T> for large arrays to avoid Full GC.
 
 ## NB
 
