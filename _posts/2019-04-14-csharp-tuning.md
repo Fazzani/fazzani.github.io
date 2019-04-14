@@ -93,3 +93,4 @@ Here are some of the tips that can improve C# code performance radically.
 ## References
 
 * [Reference 1](https://stackify.com/net-application-optimization/)
+* [ArrayPool<T>](https://adamsitnik.com/Array-Pool/)
